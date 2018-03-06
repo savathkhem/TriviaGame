@@ -138,14 +138,14 @@ $('#choices_div').on('click', 'button', function(e) {
     if (userPick !== index) {
         $('#choices_div').text("Wrong Answer... The correct answer was: " + correct);
         t.answer(false);
-        var wrongImg = $("<img>").attr("src", "../assets/images/wrong.gif");
+        $('body').append('<img src="../images/wrong.gif">');
         $('.incorrect').show();
     } else {
         $('#choices_div').text("Correct!!! The correct answer was: " + correct);
         t.answer(true);
         $('#theDiv').prepend('<img id="correct" src />')
-        //couldn't get this to work//
-        $('body').append(`<img src="${t.question.images}">`);
+        //couldn't get this to work, scope issue//
+        // $('body').append(`<img src="${t.question.images}">`);
         $('.correct').show();
     }
     t.nextQ();
