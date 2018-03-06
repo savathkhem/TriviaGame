@@ -1,0 +1,27 @@
+div {
+    margin-bottom: 20px;
+  }
+  .correct, .incorrect {
+    text-transform: capitalize;
+  }
+
+.btn-primary {
+    margin: 5px;
+}
+
+#restart-btn {
+    visibility: hidden;
+}
+
+body { 
+    background: slategray url(../images/background.jpg) no-repeat center; 
+    color: white;
+  }
+
+.container {
+    background: slategray;
+}
+
+.jumbotron {
+    color: #3333
+}
